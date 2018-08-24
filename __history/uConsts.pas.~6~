@@ -1,0 +1,16 @@
+unit uConsts;
+
+interface
+
+{$IFDEF MSWINDOWS}
+
+{$ENDIF}
+
+{$IFDEF LINUX}
+
+{$ENDIF}
+
+implementation
+
+end.
+

@@ -1,0 +1,19 @@
+unit uConsts;
+
+interface
+
+const
+  API_URL = 'https://umod.org/plugins/search.json?query=';
+
+{$IFDEF MSWINDOWS}
+
+{$ENDIF}
+
+{$IFDEF LINUX}
+
+{$ENDIF}
+
+implementation
+
+end.
+
