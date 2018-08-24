@@ -3,9 +3,9 @@
 	<Transactions>
     <Transaction>2018/08/02 22:02:49.000.445,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/08/02 22:03:24.000.661,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/08/23 17:54:07.000.830,C:\Users\adria\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\uModPluginUpdater.dproj</Transaction>
+    <Transaction>2018/08/23 17:54:07.000.830,C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\uModPluginUpdater.dproj=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2018/08/23 17:54:30.000.986,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\Unit1.pas</Transaction>
-    <Transaction>2018/08/23 17:54:36.000.797,C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\Unit1.pas=C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\uConsts.pas</Transaction>
+    <Transaction>2018/08/23 17:54:36.000.797,C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\uConsts.pas=C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\Unit1.pas</Transaction>
     <Transaction>2018/08/23 18:17:15.000.417,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\uModPluginUpdater\djson.pas</Transaction>
   </Transactions>
 </BorlandProject>

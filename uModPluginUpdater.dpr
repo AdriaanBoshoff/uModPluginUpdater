@@ -255,43 +255,6 @@ begin
   Readln;
 end;
 
-procedure Login(const aUsername, aPassword: string);
-var
-  http: TIdHTTP;
-  ssl: TIdSSLIOHandlerSocketOpenSSL;
-  params: TStringList;
-begin
-  http := TIdHTTP.Create(nil);
-  try
-    ssl := TIdSSLIOHandlerSocketOpenSSL.Create(nil);
-    try
-      ssl.SSLOptions.SSLVersions := [sslvTLSv1, sslvTLSv1_1, sslvTLSv1_2];
-      http.IOHandler := ssl;
-      http.HandleRedirects := True;
-      http.Request.UserAgent := 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0';
-      http.AllowCookies := True;
-
-      http.Get('https://umod.org/login');
-
-      params := TStringList.Create;
-      try
-        params.Add('email=' + aUsername);
-        params.Add('password=' + aPassword);
-        params.Add('remember=1');
-        params.Add('redirect=https://umod.org/');
-
-        http.Post('https://umod.org/login', params);
-      finally
-        params.Free;
-      end;
-    finally
-      ssl.Free;
-    end;
-  finally
-    http.Free;
-  end;
-end;
-
 begin
   try
     Writeln('Checking connection to uMod.org');
@@ -303,8 +266,6 @@ begin
       Writeln('');
       Sleep(1000);
       CheckForUpdates;
-     //Login('sd', 'sdf');
-    // Readln;
     end
     else
     begin

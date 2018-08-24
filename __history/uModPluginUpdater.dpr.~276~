@@ -161,6 +161,7 @@ begin
 
   SetLength(arrPlugins, Length(dynPlugins));
   SetLength(arrPluginVersions, Length(dynPlugins));
+  SetLength(arrNotUpdated, Length(dynPlugins));
 
   for I := 0 to Length(dynPlugins) - 1 do
   begin
@@ -239,6 +240,16 @@ begin
 
   Writeln('Total plugins found on uMod.org: ' + IntToStr(iplugins) + ' of ' + IntToStr(Length(dynPlugins)) + ' installed.');
   Writeln('Total plugins updated: ' + IntToStr(iUpdated));
+  Writeln('');
+  Writeln('=================================================');
+  Writeln('The following plugins couldn''t be updated as they were not found on uMod.org. They might get added later so keep trying everyday :)');
+  Writeln('');
+  for I := 0 to Length(arrNotUpdated) - 1 do
+  begin
+    if arrNotUpdated[I] <> '' then
+      Writeln(arrNotUpdated[I]);
+  end;
+  Writeln('=================================================');
   Writeln('');
   Writeln('Press any key to exit.');
   Readln;
